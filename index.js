@@ -8,7 +8,7 @@ const port = 3000 //Port
 const emoji = "🌙"; //Emoji here
 const state = "some custom status"; //Status
 const status = "dnd"; //online / idle / dnd / invisible
-const TOKEN = proccess.env.TOKEN || "DISCORD TOKEN HERE": //Your discord account TOKEN
+const token = proccess.env.token || "DISCORD TOKEN HERE"; //Your discord account TOKEN
 ///////////////////////////////////////////////////////////////
 
 
@@ -27,4 +27,4 @@ client.on('ready', async () => {
   client.user.setPresence({ activities: [cs], status: status });
 });
 
-client.login(TOKEN);
+client.login(token);
